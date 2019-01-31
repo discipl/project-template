@@ -15,22 +15,22 @@ When a (preceived) problem is detected in the code, an issue can be made. This i
 
 # Testing
 ## [Mocha:](https://mochajs.org/)
-Mocha is a test executor. This package is in control of all the tests that are to be executed on the code. This framework works with plugins like Sinon, Chai and Sonar that provide the actual tools to test the code, and Mocha makes it possible to use "npm test" in the terminal and collectively execute the tests.
+Mocha is a test executor. This package is in control of all the tests that are to be executed on the code. This framework works with tools like Sinon, Chai and Sonar that provide the actual tests for the code, and Mocha makes it possible to use "npm test" in the terminal and collectively execute the tests.
 
 ## [Chai:](https://www.chaijs.com/)
-Chai is a framework that makes test conditions easy. Chai makes it possible to make expect, should and assert statements. When one of the expects fails, it can be assumed that there was undefined behaviour.
+Chai is a framework that makes test conditions easy. Chai offers different APIs for BDD-testing. Our convention is to use the expect-variant. When one of the expects fails, it can be assumed that there was undefined behaviour.
 
 ## [Sinon:](https://sinonjs.org/)
 To make the code reliable, multiple scenario's need to be tested. Sinon helps with that. It makes mock-databases, mock-entities, stubs and spies so this can be tested in a development enviroment, without using external tools like databases and/or filling databases with test data. This will ensure that all the scenario's that can be thought of in development will be tested if you run a test after making edits to the code.
 
 ## [Travis:](https://travis-ci.org/)
-Travis is a continuous integration platform. This program makes distributing changes in the code to working servers easier. When changes are made and are accepted in Github, the changes are automatically rolled out to the servers that run on the software.
+Travis is a continuous deployment platform. This program makes distributing changes in the code to working servers easier, run tests and perform code analysis. When changes are made and are accepted in Github, the changes are automatically rolled out to the servers that run on the software. Currently It's only used for tests and code analysis.
 
 ## [Sonar:](https://www.sonarsource.com/products/codeanalyzers/sonarjs.html)
-For finding bugs and other not so fun side effects in the code, Sonar gets used. Sonar takes care of general code problems like statements that are unreachable by the code because there is no scenario that the program ever reaches that code, it can detect if code reacts correctly if not enough arguments were given and many more.
+Sonar is probably the best static code analyzer you can find on the market for JavaScript. Based on Sonarsource's JavaScript compiler front-end, it uses the most advanced techniques (pattern matching, dataflow analysis) to analyze code and find code smells, bugs and security vulnerabilities.
 
 # Miscellaneous
-## [Linter:](https://eslint.org/)
+## [Linter:](https://standardjs.com/)
 In javascript (the language used for discipl) code can be formatted in multiple way's. while different company's use different standards for formatting their code, what the code does stays the same. Different developers use different formatting conventions which can make the code look sloppy if you see different style's in the same document. This is where Linter steps in. Linter inspects the code and formats it in such a way that it looks the same everywhere. Stuff like where the brackets get opened or closed, or if a space is used before using brackets, etc.
 
 ## Note on running code on older browsers
