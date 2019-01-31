@@ -32,3 +32,6 @@ For finding bugs and other not so fun side effects in the code, Sonar gets used.
 # Miscellaneous
 ## [Linter:](https://eslint.org/)
 In javascript (the language used for discipl) code can be formatted in multiple way's. while different company's use different standards for formatting their code, what the code does stays the same. Different developers use different formatting conventions which can make the code look sloppy if you see different style's in the same document. This is where Linter steps in. Linter inspects the code and formats it in such a way that it looks the same everywhere. Stuff like where the brackets get opened or closed, or if a space is used before using brackets, etc.
+
+## Note on running code on older browsers
+This project is made in ES6. This means that this program will not run on older browsers if the program is not converted to an older iteration of javascript. It is recommended to use [babel](https://babeljs.io/) to convert this code to a language that older browsers can understand if this program needs to be run on an older browser.
