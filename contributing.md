@@ -30,5 +30,5 @@ Travis is a continuous integration platform. This program makes distributing cha
 For finding bugs and other not so fun side effects in the code, Sonar gets used. Sonar takes care of general code problems like statements that are unreachable by the code because there is no scenario that the program ever reaches that code, it can detect if code reacts correctly if not enough arguments were given and many more.
 
 # Miscellaneous
-## Linter:
+## [Linter:](https://eslint.org/)
 In javascript (the language used for discipl) code can be formatted in multiple way's. while different company's use different standards for formatting their code, what the code does stays the same. Different developers use different formatting conventions which can make the code look sloppy if you see different style's in the same document. This is where Linter steps in. Linter inspects the code and formats it in such a way that it looks the same everywhere. Stuff like where the brackets get opened or closed, or if a space is used before using brackets, etc.
